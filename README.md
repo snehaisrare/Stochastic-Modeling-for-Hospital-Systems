@@ -1,8 +1,5 @@
-# Team 19 – Fractal Image Compression Using Iterated Function Systems
 
-## Team Members
-- **V Sneha Sri Sai** – S20230010246  
-- **G Deva Harshini** – S20230010098  
+## Stochastic-Modeling-for-Hospital-Systems
 
 ## Project Overview
 This project implements **Fractal Image Compression** using the **Iterated Function System (IFS)** approach. The goal is to compress images by mapping larger domain blocks to smaller range blocks and storing transformations instead of pixel data.
