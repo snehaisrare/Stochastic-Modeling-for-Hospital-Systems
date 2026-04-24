@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Birth–Death Process Web Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    .card { padding: 1rem; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 1rem; }
+    label { display:block; margin-top: 0.5rem; }
+    input[type="text"], input[type="number"] { width: 100%; padding: .4rem; box-sizing: border-box; }
+    button { padding: .5rem 1rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Birth–Death Process — Web Demo</h1>
+  <div class="card">
+    <form action="/run" method="post">
+      <label>Birth rate (λ): <input type="number" step="any" name="lam" value="2.0" required></label>
+      <label>Death rate (μ): <input type="number" step="any" name="mu" value="3.0" required></label>
+      <label>Initial population (x0): <input type="number" name="x0" value="0" required></label>
+      <label>Time horizon (t_max): <input type="number" step="any" name="tmax" value="10.0" required></label>
+      <label>Number of simulations (for empirical dist): <input type="number" name="nsims" value="500" required></label>
+      <label>Max state plotted (max_n): <input type="number" name="maxn" value="40" required></label>
+      <button type="submit">Run Simulation</button>
+    </form>
+  </div>
+  <p>After running, the results page will show the trajectory and the empirical vs analytical comparison.</p>
+</body>
+</html>

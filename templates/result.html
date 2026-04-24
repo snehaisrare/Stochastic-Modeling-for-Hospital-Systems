@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Results — Birth–Death Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    img { max-width: 100%; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ddd; padding: .4rem; text-align: right; }
+    th { background: #f7f7f7; }
+    a.button { display: inline-block; padding: .4rem .8rem; border: 1px solid #888; border-radius: 4px; text-decoration: none; color: black; margin-top: .5rem; }
+  </style>
+</head>
+<body>
+  <h1>Results</h1>
+  <p>Parameters: λ={{lam}} , μ={{mu}} , t_max={{t_max}} , sims={{n_sims}}</p>
+  <h3>Sample trajectory</h3>
+  <img src="/{{ traj_img }}" alt="trajectory">
+  <h3>Empirical vs Analytical distribution</h3>
+  <img src="/{{ emp_img }}" alt="emp_vs_analytical">
+  <p><a href="/{{ csv_file }}" download class="button">Download CSV</a></p>
+  <p><a href="/" class="button">Run again</a></p>
+</body>
+</html>
